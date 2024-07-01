@@ -1,1 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Resume</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        body{
+            /* background: linear-gradient(rgba(236, 252, 255, 0.416),rgb(255, 243, 243)); */
+            min-height: 100vh;
+            background-color: rgb(0, 0, 41);
+            color: rgb(255, 255, 255);
+        }
+        .resume-container{
+            max-width: 1200px;
+            margin: 0px auto;
+            padding: 8px;
+            letter-spacing: 1px;
+            line-height: 24px;
+        }
+        .underline{
+            position: relative;
+        }
+        .underline::after{
+            content: "";
+            position: absolute;
+            bottom: 14%;
+            left: -20px;
+            width: 80px;
+            height: 4px;
+            border-radius: 8px;
+            background-color: rgb(255, 25, 0);
+            text-decoration: underline;
+        }
+        .name h1{
+            letter-spacing: 2px;
+            text-align: center;
+            font-family: serif;
+            padding: 18px 0;
+            border-bottom: 2px solid gray;
+        }
+        .resume-container>div>div{
+            margin: 32px 0;
+        }
+        .resume-container>div h1{
+            line-height: 60px; 
+        }
+        .resume-container .skills div span{
+            font-size: 12px;
+            padding: 6px 8px;
+            border-radius: 4px;
+            background-color: rgb(37, 37, 37);
+            color: white;
+        }
+        .resume-container .skills div{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 8px;
+        }
+        .resume-container .certificate div ul{
+            margin-left: 24px;
+        }
+        .resume-container .certificate div p{
+            margin: 8px 0;
+        }
+        .resume-container .projects div>div{
+            margin: 20px 0;
+        }
+        .resume-container .projects div>div:first-child{
+            margin-top: 0;
+        }
+        .resume-container .projects div>div a{
+            color: rgb(0, 255, 251);
+        }
+        .resume-container .profile a{
+            color: rgb(0, 255, 251);
+        }
+        .resume-container{
+            display: flex;
+            gap: 16px;
+        }
+        .resume-container .left{
+            width: 50%;
+        }
+        @media only screen and (max-width : 700px){
+            .resume-container{
+                flex-direction: column;
+            }
+            .resume-container .left{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <h1>PUSHPENDER SINGH RAJWAR</h1>
+    </div>
+    <section class="resume-container">
+        <div class="left">
 
+       
+        <div class="bio">
+            <h1 class="underline">Basic Details</h1>
+            <p>+91 8287336527</p>
+            <a>pushpendersingh3032003@gmail.com</a>
+            <p>Amrit vihar, Burari, Delhi</p>
+        </div>
+        <div class="edu">
+            <h1 class="underline">Education</h1>
+            <div>
+                <h3>Dr. Akhilesh Das Gupta Institute Of Technology and Management</h3>
+                <p>B.tech in Computer Science</p>
+                <p>2020 - 2024</p>
+            </div>
+        </div>
+        <div class="skills">
+            <h1 class="underline">Skills</h1>
+            <div>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JS</span>
+                <span>REACT JS</span>
+                <span>BOOTSTRAP</span>
+                <span>NODE JS</span>
+                <span>TAILWIND CSS</span>
+                <span>MONGODB</span>
+                <span>C++</span>
+                <span>JAVA</span>
+                <span>DSA</span>
+            </div>
+        </div>
+        <div class="certificate">
+            <h1 class="underline">Certificates and Achievements</h1>
+            <div>
+                <h3>Web Development Certificate</h3>
+                <p>90+ hours | 2-Aug-2020 to 17-sep-2020</p>
+                <ul>
+                    <li>Learned frontend and backend development</li>
+                    <li>skilled gained html,css,js,node js and mongodb</li>
+                    <li>completed a project on Crypto Based web App</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="right">
+        
+        <div class="projects">
+            <h1 class="underline">Projects</h1>
+            <div>
+                <div>
+                    <h3>Think Sharp (Full Stack)</h3>
+                    <a href="https://thinksharp.in/">https://thinksharp.in/</a>
+                </div>
+                <div>
+                    <h3>Grocery Bud in React Js</h3>
+                    <a href="https://grocery-bud-one-olive.vercel.app/">https://grocery-bud-one-olive.vercel.app/</a>
+                </div>
+                <div>
+                    <h3>URL Shortner in Node Js</h3>
+                    <a href="https://url-shortner-two-liart.vercel.app/">https://url-shortner-two-liart.vercel.app/</a>
+                </div>
+                <div>
+                    <h3>Kgtax (Freelance work)</h3>
+                    <a href="https://kgtax.in/">https://kgtax.in/</a>
+                </div>
+
+                <div>
+                    <h3>Cocktails Project in React Js</h3>
+                    <a href="https://cocktails-nu.vercel.app">https://cocktails-nu.vercel.app</a>
+                </div>
+                <div>
+                    <h3>Money Tracker App in React js</h3>
+                    <a href="https://money-traker-app.vercel.app/">https://money-traker-app.vercel.app/</a>
+                </div>
+            </div>
+        </div>
+        <div class="profile">
+            <h1 class="underline">Profile Links</h1>
+            <div>
+                <p>
+                    <i class="fa-brands fa-github"></i> 
+                    <a href="https://github.com/pankaj1330">github</a> <br>
+                </p>
+                <p>
+                    <i class="fa-brands fa-linkedin"></i> 
+                    <a href="https://www.linkedin.com/in/pushpender-singh-rajwar-90b924283/">linkedIn</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>
